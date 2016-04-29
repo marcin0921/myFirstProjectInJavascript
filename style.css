@@ -8,7 +8,7 @@ body {
 
 
 
-#logo {
+.logo {
     position: fixed;
     background-color: #D13D4E;
     border: 1px solid black;
@@ -33,6 +33,8 @@ body {
     padding: 25px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    z-index: 999;
+    position: fixed;
 
 }
 
@@ -79,9 +81,35 @@ body {
     margin-top: 200px;
     float:left;
     border: 1px solid black;
-    width: 600px;
+    width: 45%;
     height: 150px;
 
     background: blue;
     border-radius: 20px;
+}
+
+
+
+.content {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid black;
+
+}
+
+.footer {
+
+    background-color: #D13D4E;
+    border: 1px solid black;
+    height: 80px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
+
 }
