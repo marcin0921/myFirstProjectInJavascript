@@ -1,0 +1,87 @@
+body {
+    background-color: gray;
+    margin: 0;
+
+}
+
+
+
+
+
+#logo {
+    position: fixed;
+    background-color: #D13D4E;
+    border: 1px solid black;
+    height: 80px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1000;
+
+
+}
+
+#smallMenu {
+
+    background: #E0142C;
+    width: 35%;
+    position: absolute;
+    right: 0px;
+    top: 65px;
+    margin-right: 20px;
+    border: 1px solid black;
+    padding: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+#logoMini {
+
+
+    border: 1px solid black;
+    z-index: 1001;
+    position: fixed;
+    left: 90px;
+    top: 35px;
+
+
+
+}
+
+#logoMini img:hover {
+
+    opacity: 0.8;
+}
+
+
+#kafelki {
+
+    width: 100%;
+}
+
+.kafelek1 {
+
+    margin-top: 200px;
+    margin-left: 100px;
+    float:left;
+    border: 1px solid black;
+    width: 200px;
+    height: 150px;
+
+    background: red;
+    border-radius: 20px;
+}
+
+.kafelek2 {
+
+    margin-left: 100px;
+    margin-top: 200px;
+    float:left;
+    border: 1px solid black;
+    width: 600px;
+    height: 150px;
+
+    background: blue;
+    border-radius: 20px;
+}
