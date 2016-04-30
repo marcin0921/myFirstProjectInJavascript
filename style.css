@@ -1,51 +1,61 @@
 body {
-    background-color: gray;
+    background-color: #303030;
     margin: 0;
+    color: white;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+.container {
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
 
 }
 
 
 
-
-
-.logo {
+.nav {
     position: fixed;
-    background-color: #D13D4E;
-    border: 1px solid black;
-    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #414141;
     width: 100%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    padding: 20px;
+    text-align: center;
     z-index: 1000;
 
 
 }
 
-#smallMenu {
+/* #smallMenu {
 
-    background: #E0142C;
-    width: 35%;
-    position: absolute;
-    right: 0px;
-    top: 65px;
-    margin-right: 20px;
-    border: 1px solid black;
+
+    background-image: url('logo.jpg');
+    width: 300px;
+    height: 100px;
+    position: fixed;
     padding: 25px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     z-index: 999;
-    position: fixed;
 
-}
+
+} */
 
 #logoMini {
 
 
-    border: 1px solid black;
+
     z-index: 1001;
     position: fixed;
-    left: 90px;
-    top: 35px;
+    margin-left: 80px;
+    margin-top: 30px;
+
 
 
 
@@ -57,59 +67,88 @@ body {
 }
 
 
-#kafelki {
+#tiles {
 
-    width: 100%;
+    width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-.kafelek1 {
+.tile1 {
 
-    margin-top: 200px;
-    margin-left: 100px;
+
+    text-align: center;
+    margin: 20px;
+    width: 230px;
+    height: 132px;
+    background-color: #3095d3;
     float:left;
-    border: 1px solid black;
-    width: 200px;
-    height: 150px;
+    margin-top: 50px;
+    font-size: 90px;
+    padding-top: 10px;
 
-    background: red;
-    border-radius: 20px;
 }
 
-.kafelek2 {
+.tile1:hover
+{
+    background-color: #2084c2;
+}
 
-    margin-left: 100px;
-    margin-top: 200px;
+.tile2 {
+
+    margin-left: 20px;
+    margin-top: 50px;
     float:left;
-    border: 1px solid black;
-    width: 45%;
-    height: 150px;
+    width: 420px;
+    height: 132px;
+    background: #93c748;
+    font-size: 90px;
+    padding-top: 10px;
+    padding-left: 20px;
 
-    background: blue;
-    border-radius: 20px;
 }
 
+.tile2:hover
+{
+    background-color: #82b637;
+}
 
 
 .content {
 
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
     margin-bottom: 40px;
-    width: 80%;
+    width: 800px;
     padding: 20px;
-    border: 1px solid black;
+    text-align: justify;
+    background: #666666;
 
 }
 
 .footer {
 
-    background-color: #D13D4E;
+    background-color: #414141;
+    padding: 25px;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+
+
+
+
+}
+
+
+.test {
+    margin-top: 150px;
+    text-align: center;
+    width: 800px;
     border: 1px solid black;
-    height: 80px;
-    width: 100%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-
-
+    margin-left: 80px;
+    float:left;
+    padding: 20px;
 }

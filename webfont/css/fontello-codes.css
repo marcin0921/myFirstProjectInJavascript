@@ -1,0 +1,8 @@
+
+.icon-mail:before { content: '\e800'; } /* '' */
+.icon-facebook:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-youtube:before { content: '\e803'; } /* '' */
+.icon-mail-alt:before { content: '\e804'; } /* '' */
+.icon-gamepad:before { content: '\e805'; } /* '' */
+.icon-adult:before { content: '\e806'; font-size: 70px;} /* '' */
