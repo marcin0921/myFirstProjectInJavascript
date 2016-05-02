@@ -2,43 +2,71 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+
+    <title>Create your own website!</title>
+
     <meta name="Keywords" content="pierwszy projekt, pierwszy, projekt, cv, moje cv, informatyka, javascript, js, css, html, html 5, css 3" />
     <meta name="Description" content="Tworzenie dynamicznych stron www oparte na nowoczesnych skryptach javascript. Zajrzyj tutaj, a poznasz więcej szczegółów odnośnie pisania stron html 5, css 3 i javascript." />
-    <title>Create your own website!</title>
+
 
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="webfont/css/fontello.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
+    <script src="timer.js"></script>
+
 </head>
 
-<body>
+<body onload="odliczanie();">
 
 <div class="container">
 
 
 
-    <div class="nav">NAVIGATION</div>
-    <div id="logoMini">
-        <img src="javascript_logo2.png">
+<!--------------------------------------- Pierwszy prostokąt --------------------------------->
+    <div class="rectangle1">
+        <div class="logo"><img src="javascript_logo2.png" /></div>
+        <div id="zegar">a</div>
+        <div style="clear:both;"></div>
+    </div>
+<!--------------------------------------- KONIEC PIERWSZY PROSTOKĄT --------------------------------->
+
+    <div class="nav">
+        <ol>
+            <li><a href="#">START</a></li>
+            <li><a href="#">PROJEKTY</a></li>
+            <li><a href="#">GRY</a></li>
+            <li><a href="#">KONTAKT</a></li>
+        </ol>
+
+
+    <div style="clear:both"></div>
     </div>
 
 
+<!--------------------------------------- Drugi prostokąt --------------------------------->
+     <div class="rectangle2">
+         <a href="#" class="tilelink">
+            <div class="tile1">
+                <i class="icon-file-code"></i>
+            </div>
+         </a>
+         <a href="#" class="tilelink">
+            <div class="tile11">
+                <i class="icon-mail"></i>
+            </div>
+         </a>
+        <a href="#" class="tilelink">
+            <div class="tile2">
+                <i class="icon-gamepad"></i>
+            </div>
+        </a>
+        <div style="clear:both;"></div>
+     </div>
+<!--------------------------------------- KONIEC DRUGI PROSTOKĄT --------------------------------->
 
-    <div id="tiles">
-        <div class="test">MENU LOGO</div>
-        <div style="clear:both;"></div>
-        <div class="tile1">
-            <i class="icon-adult"></i>
-        </div>
-        <div class="tile1">
-            <i class="icon-mail"></i>
-        </div>
-        <div class="tile2">
-            <i class="icon-gamepad"></i>
-        </div>
-    </div>
-        <div style="clear:both;"></div>
+    <!--------------------------------------- Trzeci prostokąt --------------------------------->
+    <div class="rectangle1">
         <div class="content">
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor gravida quam, ut cursus odio gravida in. Nullam feugiat in metus in semper. Ut sagittis quam ac orci placerat mollis. Vivamus eleifend, elit non viverra maximus, libero purus ornare metus, at commodo sem nisi id mauris. Morbi aliquam urna id ullamcorper rhoncus. Etiam nec accumsan arcu. Nam bibendum aliquam enim ac luctus. Fusce vel mi quis felis faucibus lacinia. Integer placerat enim nec lobortis mattis. Cras nunc enim, mollis ac ex quis, vulputate sagittis felis. Vivamus porttitor, justo non finibus scelerisque, nulla lectus tincidunt eros, at mattis urna lacus eu lectus.</p>
@@ -52,36 +80,46 @@
             <p>Nam mi augue, pretium eget massa vitae, varius tincidunt libero. Vivamus ante elit, commodo ut neque ut, fermentum fermentum orci. Quisque et leo ut nisi elementum commodo id at elit. Vivamus nisi magna, sodales quis quam nec, mollis pretium mauris. Pellentesque semper vehicula tempor. Vivamus pulvinar, nibh quis mollis lacinia, enim ex luctus risus, sagittis laoreet diam libero in velit. Praesent congue, ante a gravida dapibus, erat augue tincidunt magna, ac convallis tellus nunc ac nisi. Pellentesque pretium nunc a sem hendrerit pellentesque. Aenean et dapibus metus, eu condimentum mauris. Ut eu turpis dignissim, luctus turpis eu, tempus est. Quisque sodales hendrerit magna, a porttitor ex porttitor quis. Praesent egestas nisl euismod ex placerat scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lectus, vulputate et ex ac, elementum eleifend magna. Maecenas felis diam, mollis consectetur molestie et, euismod scelerisque arcu.</p>
 
 
-            <script src="scores.js"></script>
-
-
         </div>
+     </div>
+    <!--------------------------------------- KONIEC TRZECI PROSTOKĄT --------------------------------->
         <div class="footer">2016 © Marcin Kozłowski - Portfolio. Programista webowy zaprasza do współpracy!
-            <i class="icon-mail-alt"></i> marcin0921@gmail.com</div>
+            <i class="icon-mail-alt"></i> marcin0921@gmail.com
+        </div>
 
 </div>
 
 
 
 
+<!-------------------------------------MOJE SKRYPTY------------------------------------------------->
+<script src="scores.js"></script>
 
 
+<script src="jquery-1.12.3.min.js"></script>
+<!--------------------------------------Skrypt sticky na podstawie jquery------------------------->
+<script>
 
+    $(document).ready(function() {
+        var stickyNavTop = $('.nav').offset().top;
 
+        var stickyNav = function(){
+            var scrollTop = $(window).scrollTop();
 
+            if (scrollTop > stickyNavTop) {
+                $('.nav').addClass('sticky');
+            } else {
+                $('.nav').removeClass('sticky');
+            }
+        };
 
+        stickyNav();
 
-
-
-
-
-
-
-
-
-
-
-
+        $(window).scroll(function() {
+            stickyNav();
+        });
+    });
+</script>
 
 
 </body>
