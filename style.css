@@ -1,4 +1,5 @@
 body {
+
     background-color: gray;
     margin: 0 !important;
     color: white;
@@ -24,7 +25,6 @@ body {
 
     width: 100%;
 
-
 }
 
 .logo {
@@ -46,7 +46,6 @@ ol {
     padding: 0;
     display: inline-block;
 
-
 }
 
 ol a {
@@ -64,7 +63,6 @@ ol a:hover {
 }
 
 ol > li {
-
 
     margin-top: 15px;
     float:left;
@@ -88,6 +86,7 @@ ol > li:hover {
 .logo img:hover {
 
     opacity: 0.8;
+
 }
 
 
@@ -105,13 +104,13 @@ ol > li:hover {
     width: 100%;
     text-align: center;
 
-
 }
 
 a.tilelink {
 
     text-decoration: none;
     color: #ffffff;
+
 }
 
 .nav {
@@ -133,11 +132,13 @@ a.tilelink {
     margin-top: 30px;
     margin-bottom: 30px;
 
+
 }
 
 .tile1:hover {
 
     background-color: #E06325;
+
 }
 
 .tile11 {
@@ -156,26 +157,30 @@ a.tilelink {
 .tile11:hover {
 
     background-color: #82b637;
+
 }
 
 .tile2 {
 
     text-align: left;
     display: inline-block;
-    width: 490px;
+    width: 510px;
     height: 198px;
     background: #C34F4F;
     font-size: 140px;
     padding-top: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding-left: 30px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1000;
 
 }
 
-.tile2:hover
-{
+.tile2:hover {
+
     background-color: #B23E3E;
+
 }
 
 
@@ -206,7 +211,24 @@ a.tilelink {
 
     width: 100%;
     position: fixed;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     z-index: 100;
+
 }
+
+
+/*
+.square1 {
+
+    width: 208px;
+    height: 0;
+    position:relative; right: 60px; top: 270px;
+    display: inline-block;
+    border-right:530px solid yellow;
+    border-top:208px solid transparent;
+    border-left:0 solid transparent;
+
+
+}
+*/
