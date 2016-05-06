@@ -61,3 +61,7 @@ var index = whichIsTheCheapest(bestSamples, prices);
 console.log("Największa wartość to: " + highScore);
 console.log("Najlepsze próbki to nr: " + bestSamples);
 console.log("Najtańsza próbka to nr: " + index);
+
+
+
+
