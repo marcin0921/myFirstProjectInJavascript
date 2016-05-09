@@ -5,10 +5,10 @@
     height: 768px;
     margin-left: auto;
     margin-right: auto;
-    opacity: 0.5;
     position: relative;
     
 }
+
 
 table{
 
@@ -19,6 +19,7 @@ table{
     top: 90px;
     left: 77px;
     border-spacing: 0;
+    opacity: 1;
 
 
 }
@@ -56,7 +57,10 @@ td, tr {
 .firstRow {
 
     border-top: 2px solid white;
+
+
 }
+
 
 .firstRow:last-child {
 
@@ -76,4 +80,11 @@ td, tr {
 .lastColumn {
 
     border-right: 2px solid white;
+
 }
+
+.firstColumn {
+
+    border-left: 2px solid white;
+}
+
