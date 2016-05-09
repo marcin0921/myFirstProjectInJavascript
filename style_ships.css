@@ -6,9 +6,10 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    
-}
+    font-family: 'Indie Flower', cursive;
 
+
+}
 
 table{
 
@@ -86,5 +87,36 @@ td, tr {
 .firstColumn {
 
     border-left: 2px solid white;
+}
+
+#messageArea {
+
+    width: 100px;  /* width and height added only for tests */
+    height: 50px;
+    background: green;
+    position: absolute; /* nie jestem pewien czy koniecznie musi to byc - zobaczy sie pozniej */
+    top: 0;
+    left: 0;
+}
+
+form {
+
+
+    background-color: darkgreen;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 15px;
+
+}
+
+form input {
+
+    background: mediumseagreen;
+    border-color: forestgreen;
+    font-family: 'Indie Flower', cursive;
+    font-size: 0.8em;
+    font-weight: bold;
+
 }
 
