@@ -1,4 +1,29 @@
-#ships {
+@media screen and (max-width:1366px) {
+
+    .ships {
+        width: 900px !important;
+        height: 570px !important;
+    }
+
+    table {
+        width: 700px !important;
+        height: 350px !important;
+        top: 37px !important;
+
+
+    }
+
+    .signRow, .signColumn {
+        font-size: 40px !important;
+    }
+
+    form {
+        padding: 8px !important;
+    }
+
+}
+
+.ships {
 
     background: url("crosshair.jpg") no-repeat center;
     width: 1024px;
@@ -8,8 +33,9 @@
     position: relative;
     font-family: 'Indie Flower', cursive;
 
-
 }
+
+
 
 table{
 
@@ -29,7 +55,7 @@ td, tr {
 
     border: 1px solid white;
     width: 98px;
-    height: 73px;
+    height: 33px;
 
 
 }
