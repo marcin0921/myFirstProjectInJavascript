@@ -34,6 +34,7 @@
 .ships {
 
     background: url("crosshair.jpg") no-repeat center;
+    border: 2px darkgreen dotted;
     width: 1024px;
     height: 768px;
     margin-left: auto;
