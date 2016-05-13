@@ -23,6 +23,14 @@
 
 }
 
+.hit {
+    background: url("ship.png") no-repeat center;
+}
+
+.miss {
+    background: url("miss.png") no-repeat center;
+
+}
 .ships {
 
     background: url("crosshair.jpg") no-repeat center;
@@ -117,12 +125,9 @@ td, tr {
 
 #messageArea {
 
-    width: 100px;  /* width and height added only for tests */
-    height: 50px;
-    background: green;
     position: absolute; /* nie jestem pewien czy koniecznie musi to byc - zobaczy sie pozniej */
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 5px;
 }
 
 form {
