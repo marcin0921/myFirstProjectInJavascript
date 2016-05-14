@@ -41,9 +41,9 @@ var model = {
     shipLength: 3,
 
     ships:
-        [{location: ["00", "01", "02"], hits: ["", "", ""]},
-        {location: ["10", "11", "12"], hits: ["", "", ""]},
-        {location: ["20", "21", "22"], hits: ["", "", ""]}],
+        [{location: [0, 0, 0], hits: ["", "", ""]},
+        {location: [0, 0, 0], hits: ["", "", ""]},
+        {location: [0, 0, 0], hits: ["", "", ""]}],
 
     fire: function (guess) {
 
@@ -77,9 +77,65 @@ var model = {
                 return false;
         }
         return true;
+    },
+
+    // Funkcja rozmieszczania statkow losowo
+    generateShipLocations: function () {
+
+        var locations;
+        for(var i = 0; i < this.numShips; i++) {
+            do {
+                locations = this.generateShip();
+            }while (this.collision(locations));
+
+            this.ships[i].location = locations;
+        }
+    },
+
+
+    generateShip: function () {
+
+        // Losowanie pierwszego pola statku w poziomie lub pionie tak aby zmiescil sie w planszy (dlatego odjete shipLenght)
+        var direction = Math.floor(Math.random() * 2);
+        var row, col;
+        if (direction === 1) {  // Jeśli 1 to rozmieszczamy poziomo
+            row = Math.floor(Math.random() * this.boardSize);
+            col = Math.floor(Math.random() * (this.boardSize - this.shipLength));
+
+        }else  // rozmieszczamy pionowo
+        {
+            row = Math.floor(Math.random() * (this.boardSize - this.shipLength));
+            col = Math.floor(Math.random() * this.boardSize);
+        }
+
+        // Generowanie wspolrzednych statku
+        var newShipLocations = [];
+        for (var i = 0; i < this.shipLength; i++) {
+            if (direction === 1) {
+                newShipLocations.push(row + "" + (col + i));
+            }else {
+                newShipLocations.push((row + i) + "" + col);
+            }
+        }
+        return newShipLocations;
+    },
+
+    // Funkcja sprawdzajaca czy generowany statek nie koliduje juz z istniejacymi wspolrzednymi statkow
+    collision: function (locations) {
+
+        for (var i = 0; i < this.numShips; i++) {
+            var ship = model.ships[i];
+            for (var j = 0; j < locations.length; j++) {
+                if (ship.location.indexOf(locations[j]) >= 0) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
+
 };
-/* testy dla obiektu model */
+/* testy dla obiektu model
 var test1 = model.ships[2].location[2];    // test stosowania łańcucha odwołań
 console.log("Współrzędne trzeciego statku i trzeciego pola to: " + test1);
 model.fire("44");
@@ -91,14 +147,12 @@ model.fire("00");
 model.fire("20");
 model.fire("10");
 model.fire("12");
-model.fire("22");
+model.fire("22"); */
 
 
 var controller = {
 
     guesses: 0,
-
-
 
     processGuess: function (guess) {
         var location = parseGuess(guess);   // sprawdza poprawność wprowadzonych współrzędnych
@@ -112,8 +166,10 @@ var controller = {
 
         }
     }
+
 };
 
+// Funkcja sprawdzająca poprawność wprowadzonych danych i konwersja litery na liczbe
 function parseGuess (guess) {
 
     var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
@@ -128,7 +184,7 @@ function parseGuess (guess) {
         if(isNaN(row) || isNaN(column))
             alert("Ups, to nie są współrzędne!");
         else if(row < 0 || row >= model.boardSize || column < 0 || column >= model.boardSize)
-            alert("Współrzędne poza planszą!");
+            view.displayMessage("Współrzędne poza planszą!");
         else
             return row + column;
     }
@@ -136,7 +192,41 @@ function parseGuess (guess) {
 }
 
 
+// Procedura obsługi zdarzeń = Pobranie wartości z pola formularza
+function handleFireButton () {
 
+    var guessInput = document.getElementById("guessInput");
+    var guess = guessInput.value;
+
+    controller.processGuess(guess);
+    guessInput.value = "";
+}
+
+// Procedura obsługi zdarzeń = klikniecie entera powoduje klikniecie przycisku Ognia!
+function handleKeyPress(e) {  // przeglądarka przekazuje argument do parametru E jaki został klawisz wcisnięty
+
+    var fireButton = document.getElementById("fireButton");
+    if (e.keyCode === 13) {   // liczba 13 odpowiada enterowi
+        fireButton.click();
+        return false;  // zwracamy false aby upewnić się aby formularz nie robił nic więcej
+    }
+}
+
+
+function init() {
+    //reakcja na przycisk ognia!
+    var fireButton = document.getElementById("fireButton");
+    fireButton.onclick = handleFireButton;
+
+    //reakcja na enter bedac w polu formularza
+    var guessInput = document.getElementById("guessInput");
+    guessInput.onkeydown = handleKeyPress;
+
+    //Generowanie losowo statków na planszy
+    model.generateShipLocations();
+}
+// Wywołanie funkcji init po załadowaniu strony!
+window.onload = init;
 
 
 
