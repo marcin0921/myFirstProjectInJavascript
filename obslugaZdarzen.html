@@ -16,7 +16,7 @@
     <link href="webfont/css/fontello.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-
+    <script src="obslugaZdarzen.js"></script>
     <script src="timer.js"></script>
 
 </head>
@@ -124,32 +124,7 @@
     });
 </script>
 
-<script>
 
-    window.onload = init;
-
-
-    function init() {
-
-        var images = document.getElementsByTagName("img");
-        for (var i = 0; i < images.length; i++) {
-            images[i].onclick = changeImgSrc;
-        }
-
-
-    }
-
-
-    function changeImgSrc (eventObj) {
-
-        var image = eventObj.target;
-        var name = image.id;
-        name = name + ".jpg";
-        image.src = "imgObslugaZdarzen/" + name;
-
-    }
-
-</script>
 
 </body>
 </html>
