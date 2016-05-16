@@ -2,7 +2,6 @@
  * Created by Marcin on 2016-05-13.
  */
 
-
 /* Widok odpowiedzialny za ukazywanie wiadomosci odnosnie trafienia oraz wyswietlenie pola na planszy */
 var view = {
     
