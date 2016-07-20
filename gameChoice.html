@@ -5,18 +5,14 @@
 
     <title>Create your own website!</title>
 
-
     <meta name="Keywords" content="pierwszy projekt, pierwszy, projekt, cv, moje cv, informatyka, javascript, js, css, html, html 5, css 3" />
     <meta name="Description" content="Tworzenie dynamicznych stron www oparte na nowoczesnych skryptach javascript. Zajrzyj tutaj, a poznasz więcej szczegółów odnośnie pisania stron html 5, css 3 i javascript." />
 
 
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="style_ships.css" rel="stylesheet" type="text/css" />
-
     <link href="webfont/css/fontello.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-    <script src="obslugaZdarzen.js"></script>
+
     <script src="timer.js"></script>
 
 </head>
@@ -39,7 +35,7 @@
         <ol>
             <li><a href="index.html">START</a></li>
             <li><a href="#">PROJEKTY</a></li>
-            <li><a href="gameChoice.html">GRY</a></li>
+            <li><a href="games.html">GRY</a></li>
             <li><a href="#">KONTAKT</a></li>
         </ol>
 
@@ -60,7 +56,7 @@
                 <i class="icon-mail"></i>
             </div>
          </a>
-        <a href="gameChoice.html" class="tilelink">
+        <a href="games.html" class="tilelink">
             <div class="tile2">
                 <i class="icon-gamepad"></i>
             </div>
@@ -71,17 +67,21 @@
 
     <!--------------------------------------- Trzeci prostokąt --------------------------------->
     <div class="rectangle1">
-        <div class="content">
 
-            <img id="zero" class="obsluga" src="imgObslugaZdarzen/zeroblur.jpg" />
-            <img id="one" class="obsluga" src="imgObslugaZdarzen/oneblur.jpg" />
-            <img id="two" class="obsluga" src="imgObslugaZdarzen/twoblur.jpg" /><br>
-            <img id="three" class="obsluga" src="imgObslugaZdarzen/threeblur.jpg" />
-            <img id="four" class="obsluga" src="imgObslugaZdarzen/fourblur.jpg" />
-            <img id="five" class="obsluga" src="imgObslugaZdarzen/fiveblur.jpg" />
-
-
+            <a class="notAwarded" href="games.html">
+            <div class="tileChoiceGame">
+                Version 1.0
+            <img class="choiceGame" src="img/battleship.png">
             </div>
+            </a>
+
+            <a class="notAwarded" href="games2.html">
+            <div class="tileChoiceGame">
+                Version 2.0
+                <img class="choiceGame" src="img/battleship.png">
+            </div>
+                </a>
+
      </div>
     <!--------------------------------------- KONIEC TRZECI PROSTOKĄT --------------------------------->
         <div class="footer">2016 © Marcin Kozłowski - Portfolio. Programista webowy zaprasza do współpracy!
@@ -96,7 +96,7 @@
 <!-------------------------------------MOJE SKRYPTY------------------------------------------------->
 <!-- WYŁĄCZONY <script src="scores.js"></script> -->
 <!-- WYŁĄCZONY <script src="car.js"></script> -->
-<!-- WYŁĄCZONY <script src="typeof.js"></script> -->
+<script src="typeof.js"></script>
 
 
 <script src="jquery-1.12.3.min.js"></script>
@@ -123,7 +123,6 @@
         });
     });
 </script>
-
 
 
 </body>

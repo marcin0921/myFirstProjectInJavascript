@@ -95,6 +95,7 @@ ol > li:hover {
     background-color: #222930;
     width: 100%;
     text-align: center;
+    padding-top: 30px;
 
 }
 
@@ -103,6 +104,17 @@ ol > li:hover {
     background-color: #161B20;
     width: 100%;
     text-align: center;
+
+
+
+}
+
+.rectangle2Index {
+
+    background-color: #161B20;
+    width: 100%;
+    height: 210px;
+
 
 }
 
@@ -123,14 +135,35 @@ a.tilelink {
 
 .tile1 {
 
-    width: 345px;
-    height: 198px;
+    width: 242px;
+    height: 139px;
     background-color: #F17436;
-    font-size: 140px;
+    font-size: 100px;
     padding-top: 10px;
     display: inline-block;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-right: 8px;
+    margin-left: 60px;
+
+
+}
+
+.tile1Index {
+
+    width: 242px;
+    height: 139px;
+    background-color: #F17436;
+    font-size: 100px;
+    padding-top: 10px;
+    position: absolute;
+    /* display: inline-block; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    opacity: 0.3;
+    display: none;
+
 
 
 }
@@ -143,14 +176,32 @@ a.tilelink {
 
 .tile11 {
 
-    width: 345px;
-    height: 198px;
+    width: 242px;
+    height: 139px;
     background-color: #93c748;
-    font-size: 140px;
+    font-size: 100px;
     padding-top: 10px;
     display: inline-block;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-right: 8px;
+
+}
+
+.tile11Index {
+
+    width: 242px;
+    height: 139px;
+    background-color: #93c748;
+    font-size: 100px;
+    padding-top: 10px;
+    /* display: inline-block; */
+    position: absolute;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    opacity: 0.3;
+    display: none;
 
 }
 
@@ -164,14 +215,35 @@ a.tilelink {
 
     text-align: left;
     display: inline-block;
-    width: 510px;
-    height: 198px;
+    width: 400px;
+    height: 139px;
     background: #C34F4F;
-    font-size: 140px;
+    font-size: 100px;
     padding-top: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
     padding-left: 20px;
+
+
+}
+
+.tile2Index {
+
+    text-align: left;
+    /* display: inline-block; */
+    position: absolute;
+    width: 400px;
+    height: 139px;
+    background: #C34F4F;
+    font-size: 100px;
+    padding-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    right: 0;
+    opacity: 0.3;
+    display: none;
+
 
 
 }
@@ -182,11 +254,41 @@ a.tilelink {
 
 }
 
+.tileChoiceGame {
+
+    text-align: center;
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    background: black;
+    padding-top: 10px;
+    border: 3px dotted gray;
+
+}
+
+.tileChoiceGame:hover {
+    opacity: 0.7;
+}
+
+.tileChoiceGame:first-child {
+    margin-right: 40px;
+}
+
+.choiceGame {
+
+    margin: 30px;
+    width: 80%;
+    height: 80%;
+}
+
+
+
 
 .content {
 
     text-align: justify;
-    padding: 30px 150px;
+    padding: 10px 150px;
+
 
 }
 
@@ -242,3 +344,29 @@ a.tilelink {
 
 
 }
+
+.notAwarded {
+
+    text-decoration: none;
+    color: white;
+}
+
+#again {
+    position: absolute;
+    right: 282px;
+    top: 220px;
+    z-index: 100000;
+}
+
+#but {
+    height: 100px;
+    width: 200px;
+    border: 2px black solid;
+    background-color: #82b637;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
+
+}
+

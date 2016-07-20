@@ -1,17 +1,20 @@
 @media screen and (max-width:1366px) {
 
     .ships {
-        width: 900px !important;
-        height: 570px !important;
+        width: 765px !important;
+        height: 540px !important;
+        margin-bottom: 30px;
     }
 
     table {
-        width: 700px !important;
-        height: 350px !important;
+        width: 595px !important;
+        height: 296px !important;
         top: 37px !important;
 
 
+
     }
+
 
     .signRow, .signColumn {
         font-size: 40px !important;
@@ -63,8 +66,8 @@ table{
 td, tr {
 
     border: 1px solid white;
-    width: 98px;
-    height: 33px;
+    width: 83px;
+    height: 28px;
 
 
 }
@@ -74,7 +77,7 @@ td, tr {
     font-size: 50px;
     text-align: right;
     padding-right: 10px;
-    width: 88px !important;
+    width: 50px !important;
     color: darkgreen;
     border: none;
 
