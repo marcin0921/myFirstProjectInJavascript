@@ -40,51 +40,66 @@ body {
     text-align: center;
 }
 
+.icon-bar {
+
+    background-color: #1a5570 !important;
+}
+
+.navbar-toggle {
+
+    background-color: #4E8D97 !important;
+    border: none !important;
+}
 
 
-ol {
+
+@media (min-width: 619px) and (max-width: 811px) {}
+
+
+
+ul {
 
     list-style-type: none;
     font-size: 18px;
     line-height: 200%;
-    height: 65px;
     margin: 0;
     padding: 0;
-    display: inline-block;
+
 
 }
 
-ol a {
+ul a {
     
-    display: block;
-    text-decoration: none;
+
+    text-decoration: none !important;
     color: #ffffff;
 
 }
 
-ol a:hover {
+ul a:hover {
 
     color: #dddddd;
 
 }
 
-ol > li {
+ul > li {
 
     margin-top: 15px;
-    float:left;
+    margin-bottom: 15px;
     width: 200px;
     border-right: 1px dashed #A1C0C2;
+    display: block;
 
 }
 
-ol > li:first-child {
+ul > li:first-child {
 
     border-left: 1px dashed #A1C0C2;
 
 }
 
 
-ol > li:hover {
+ul > li:hover {
 
     background-color: #4E8D90;
 
@@ -125,7 +140,7 @@ ol > li:hover {
 .rectangle2Index {
 
     background-color: #161B20;
-    width: 100%;
+
     height: 210px;
 
 
@@ -138,12 +153,19 @@ a.tilelink {
 
 }
 
-.nav {
+.navbar {
 
-    background-color: #5F9EA0;
-    text-align: center;
+    background-color: #5F9EA0 !important;
+    text-align: center !important;
+    padding: 10px 0 5px 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+}
 
+.navbar-collapse {
 
+    border: none !important;
 }
 
 .tile1 {
