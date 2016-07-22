@@ -86,7 +86,7 @@ ul > li {
 
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 200px;
+    padding: 5px 70px !important;
     border-right: 1px dashed #A1C0C2;
     display: block;
 
