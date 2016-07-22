@@ -1,12 +1,14 @@
 body {
 
-    background-color: gray;
+    background-color: gray !important;
     margin: 0 !important;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    color: white !important;
+    font-family: 'Lato', sans-serif !important ;
+    font-size: 20px !important;
 
 }
+
+
 
 /* #smallMenu {
 
@@ -21,17 +23,21 @@ body {
 
 } */
 
-.container {
 
-    width: 100%;
-
-}
 
 .logo {
 
-    padding: 30px 0 20px 150px;
-    float: left;
+    margin: 30px 0;
+    text-align: center;
 
+
+}
+
+#zegar {
+
+    margin: 55px 0;
+    font-size: 48px;
+    text-align: center;
 }
 
 
@@ -89,13 +95,20 @@ ol > li:hover {
 
 }
 
+[class*="row"] {
+
+    background-color: #222930;
+}
+
 
 .rectangle1 {
 
     background-color: #222930;
-    width: 100%;
+
     text-align: center;
-    padding-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
 
 }
 
@@ -128,8 +141,8 @@ a.tilelink {
 .nav {
 
     background-color: #5F9EA0;
-    width: 100%;
     text-align: center;
+
 
 }
 
@@ -301,12 +314,7 @@ a.tilelink {
 }
 
 
-#zegar {
 
-    padding-top: 55px;
-    font-size: 50px;
-
-}
 
 .sticky {
 

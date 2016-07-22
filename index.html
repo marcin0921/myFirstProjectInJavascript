@@ -2,6 +2,8 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Create your own website!</title>
 
@@ -10,6 +12,8 @@
 
 
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+
     <link href="webfont/css/fontello.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
@@ -19,16 +23,21 @@
 
 <body onload="odliczanie();">
 
-<div class="container">
+<div class="container-fluid">
 
 
 
 <!--------------------------------------- Pierwszy prostokąt --------------------------------->
-    <div class="rectangle1">
+
+    <div class="row">
+        <div class="col-md-5">
         <a href="index.html"><div class="logo"><img src="javascript_logo2.png" /></div></a>
+            </div>
+        <div class="col-md-5">
         <div id="zegar"></div>
-        <div style="clear:both;"></div>
-    </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div></div>
 <!--------------------------------------- KONIEC PIERWSZY PROSTOKĄT --------------------------------->
 
     <div class="nav">
@@ -38,10 +47,12 @@
             <li><a href="gameChoice.html">GRY</a></li>
             <li><a href="#">KONTAKT</a></li>
         </ol>
-<!-- test-->
+
 
     <div style="clear:both"></div>
+        </div>
     </div>
+
 
 
 <!--------------------------------------- Drugi prostokąt --------------------------------->
@@ -98,7 +109,8 @@
 
 
 <script src="jquery-1.12.3.min.js"></script>
- <script src="indexAnimations.js"></script>
+<script src="indexAnimations.js"></script>
+<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 <!--------------------------------------Skrypt sticky na podstawie jquery------------------------->
 <script>
 
