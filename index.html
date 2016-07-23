@@ -39,13 +39,12 @@
     </div>
 
 </div>
-
 <!--------------------------------------- KONIEC PIERWSZY PROSTOKĄT --------------------------------->
-
-
-
+<div class="container-fluid">
+    <div class="row">
         <nav class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
+                <span id="navMenu">Nawigacja</span>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
                     <span class="sr-only">Rozwiń nawigację</span>
                     <span class="icon-bar"></span>
@@ -56,23 +55,20 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                 <ul class="list-inline">
                     <li><a href="index.html">START</a></li>
-                    <li><a href="#">PROJEKTY</a></li>
-                    <li><a href="gameChoice.html">GRY</a></li>
-                    <li><a href="#">KONTAKT</a></li>
+                    <li class="borderLI-sx"><a href="#">PROJEKTY</a></li>
+                    <li class="borderLI"><a href="gameChoice.html">GRY</a></li>
+                    <li class="borderLI-sx"><a href="#">KONTAKT</a></li>
                 </ul>
             </div>
-
-
         </nav>
-
-
-
-
-
-
+        </div>
+    </div>
 
 <!--------------------------------------- Drugi prostokąt --------------------------------->
-     <div class="rectangle2Index">
+<div class="container-fluid">
+    <div class="row">
+<div class="rectangle2Index">
+        <div class="col-lg-12">
          <a href="obslugaZdarzen.html" class="tilelink">
             <div class="tile1Index">
                 <i class="icon-file-code"></i>
@@ -89,7 +85,11 @@
             </div>
         </a>
         <div style="clear:both;"></div>
+        </div>
      </div>
+     </div>
+     </div>
+
 <!--------------------------------------- KONIEC DRUGI PROSTOKĄT --------------------------------->
 
     <!--------------------------------------- Trzeci prostokąt --------------------------------->
@@ -127,35 +127,14 @@
 <script src="jquery-1.12.3.min.js"></script>
 <script src="indexAnimations.js"></script>
 <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-<!--------------------------------------Skrypt sticky na podstawie jquery------------------------->
-<!-- <script>
 
-    $(document).ready(function() {
-        var stickyNavTop = $('.navbar').offset().top;
-
-        var stickyNav = function(){
-            var scrollTop = $(window).scrollTop();
-
-            if (scrollTop > stickyNavTop) {
-                $('.navbar').addClass('sticky');
-            } else {
-                $('.navbar').removeClass('sticky');
-            }
-        };
-
-        stickyNav();
-
-        $(window).scroll(function() {
-            stickyNav();
-        });
+<!-- Sticky Nav -->
+<script src="jquery.sticky.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".navbar").sticky({topSpacing:0});
     });
 </script>
-
-
--->
-
-
-
 
 
 
