@@ -170,6 +170,7 @@ ul > li:hover {
     background-color: #161B20;
     width: 100%;
     text-align: center;
+    display: inline-block;
 
 
 
@@ -178,9 +179,7 @@ ul > li:hover {
 .rectangle2Index {
 
     background-color: #161B20;
-
     height: 210px;
-
 
 }
 
@@ -212,6 +211,7 @@ a.tilelink {
 
 .tile1 {
 
+
     width: 242px;
     height: 139px;
     background-color: #F17436;
@@ -232,8 +232,7 @@ a.tilelink {
     height: 139px;
     background-color: #F17436;
     font-size: 100px;
-    padding-top: 10px;
-    position: absolute;
+    position: relative;
     /* display: inline-block; */
     margin-top: 30px;
     margin-bottom: 30px;
@@ -271,9 +270,8 @@ a.tilelink {
     height: 139px;
     background-color: #93c748;
     font-size: 100px;
-    padding-top: 10px;
     /* display: inline-block; */
-    position: absolute;
+    position: relative;
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
@@ -308,16 +306,14 @@ a.tilelink {
 
     text-align: left;
     /* display: inline-block; */
-    position: absolute;
+    position: relative;
     width: 400px;
     height: 139px;
     background: #C34F4F;
     font-size: 100px;
-    padding-top: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
     padding-left: 20px;
-    right: 0;
     opacity: 0.3;
     display: none;
 
