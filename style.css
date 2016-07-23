@@ -76,11 +76,16 @@ body {
 
 }
 
-@media (min-width: 0) and (max-width: 768px) {
+@media (min-width: 0) and (max-width: 767px) {
 
     #navMenu {
         display: inline !important;
     }
+
+    .tile1Index, .tile11Index, .tile2Index {
+        display: none;
+    }
+
 }
 
 
@@ -157,9 +162,7 @@ ul > li:hover {
 .rectangle1 {
 
     background-color: #222930;
-
     text-align: center;
-    padding-top: 15px;
     padding-bottom: 15px;
 
 
@@ -228,18 +231,43 @@ a.tilelink {
 
 .tile1Index {
 
-    width: 242px;
-    height: 139px;
+
     background-color: #F17436;
     font-size: 100px;
-    position: relative;
     /* display: inline-block; */
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    opacity: 0.3;
-    display: none;
+    opacity: 0;
 
+
+}
+
+.tile11Index {
+
+    background-color: #93c748;
+    font-size: 100px;
+    /* display: inline-block; */
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    opacity: 0;
+
+
+}
+
+.tile2Index {
+
+    text-align: left;
+    /* display: inline-block; */
+
+    background: #C34F4F;
+    font-size: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    opacity: 0;
 
 
 }
@@ -264,21 +292,7 @@ a.tilelink {
 
 }
 
-.tile11Index {
 
-    width: 242px;
-    height: 139px;
-    background-color: #93c748;
-    font-size: 100px;
-    /* display: inline-block; */
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    opacity: 0.3;
-    display: none;
-
-}
 
 .tile11:hover {
 
@@ -302,24 +316,7 @@ a.tilelink {
 
 }
 
-.tile2Index {
 
-    text-align: left;
-    /* display: inline-block; */
-    position: relative;
-    width: 400px;
-    height: 139px;
-    background: #C34F4F;
-    font-size: 100px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-left: 20px;
-    opacity: 0.3;
-    display: none;
-
-
-
-}
 
 .tile2:hover {
 
@@ -360,7 +357,7 @@ a.tilelink {
 .content {
 
     text-align: justify;
-    padding: 10px 150px;
+    padding: 0 150px 10px 150px;
 
 
 }
