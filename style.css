@@ -146,6 +146,7 @@ ul > li:first-child {
 }
 
 
+
 ul > li:hover {
 
     background-color: #4E8D90;
@@ -369,6 +370,10 @@ a.tilelink {
 .gamechoice {
 
     text-align: center !important;
+}
+
+#gameChoice {
+    cursor: pointer;
 }
 
 

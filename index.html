@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -56,7 +56,7 @@
                 <ul class="list-inline">
                     <li><a href="index.html">START</a></li>
                     <li class="borderLI-sx"><a href="projects.html">PROJEKTY</a></li>
-                    <li class="borderLI"><a href="gameChoice.html">GRY</a></li>
+                    <li class="borderLI" id="gameChoice">GRY</li>
                     <li class="borderLI-sx"><a href="contact.html">KONTAKT</a></li>
                 </ul>
             </div>
@@ -107,15 +107,15 @@
 
     <!--------------------------------------- Trzeci prostokąt --------------------------------->
 
-<div class="container-fluid">
+<div class="container-fluid" id="kotwiczka">
     <div class="row">
         <div class="col-xs-offset-1 col-xs-10 content" >
 
 
             <p>Strona jest wynikiem prac i nauki programowania w językach: HTML5, CSS, JS z użyciem framerwork'ów jQuery oraz Bootstrap. Projekt strony jest codziennie rozbudowywany dzięki poznawaniu nowych narzędzi oraz ciężko włożonej pracy. </p>
             <h2>Kilka słów o sobie ...</h2>
-            <p>Ukończyłem I stopień studiów na kierunku Finanse i rachunkowość w Akademii Finansów i Biznesu w Warszawie. Przez wzgląd na zamiłowanie i zainteresowanie informatyką, podjąłem samodzielną naukę programowania. Źródłem mojej wiedzy są książki wydawnictwa Helion oraz masa tutoriali i dokumentacji zamieszonych w Internecie.</p>
-            <p>Od dzieciństwa interesuje się sprawami sprzętowymi w komputerze, jak i jego odpowiednią konfiguracją oraz odnajdywaniem rozwiązań na występujące problemy po stronie hardware'u, jak i software'u. </p>
+            <p>Ukończyłem I stopień studiów na kierunku Finanse i rachunkowość w Akademii Finansów i Biznesu w Warszawie. Przez wzgląd na zamiłowanie i zainteresowanie informatyką, podjąłem samodzielną naukę programowania. Źródłem mojej wiedzy są książki wydawnictwa Helion oraz masa tutoriali i dokumentacji zamieszczonych w Internecie.</p>
+            <p>Od dzieciństwa interesuje się sprawami sprzętowymi w komputerze, odpowiednią konfiguracją oraz odnajdywaniem rozwiązań na występujące problemy po stronie hardware'u i software'u. </p>
             <p>Moim celem jest ciągłe podnoszenie kwalifikacji w specjalizacji programowania Frontend. Wierzę, że włożony trud w naukę pozwoli mi zdobywać nowe doświadczenia w dziedzinie IT.</p>
 
 
@@ -156,6 +156,15 @@
 <script>
     $(document).ready(function(){
         $(".navbar").sticky({topSpacing:0});
+    });
+</script>
+
+<script>
+
+    $(document).ready(function(){
+        $("#gameChoice").click(function(){
+            $("#kotwiczka").load("demo_test.txt");
+        });
     });
 </script>
 
