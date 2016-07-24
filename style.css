@@ -83,7 +83,7 @@ body {
     }
 
     .tile1Index, .tile11Index, .tile2Index {
-        display: none;
+        display: none !important;
     }
 
 }
@@ -212,6 +212,13 @@ a.tilelink {
 
 }
 
+#underConstruction {
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
 .tile1 {
 
 
@@ -236,7 +243,7 @@ a.tilelink {
     font-size: 100px;
     /* display: inline-block; */
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px !important;
     text-align: center;
     opacity: 0;
 
@@ -250,7 +257,7 @@ a.tilelink {
     /* display: inline-block; */
 
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px !important;
     text-align: center;
     opacity: 0;
 
@@ -265,7 +272,7 @@ a.tilelink {
     background: #C34F4F;
     font-size: 100px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px !important;
     padding-left: 20px;
     opacity: 0;
 
@@ -328,8 +335,7 @@ a.tilelink {
 
     text-align: center;
     display: inline-block;
-    width: 400px;
-    height: 300px;
+
     background: black;
     padding-top: 10px;
     border: 3px dotted gray;
@@ -340,9 +346,7 @@ a.tilelink {
     opacity: 0.7;
 }
 
-.tileChoiceGame:first-child {
-    margin-right: 40px;
-}
+
 
 .choiceGame {
 
@@ -351,13 +355,16 @@ a.tilelink {
     height: 80%;
 }
 
+.gamechoice {
 
+    text-align: center !important;
+}
 
 
 .content {
 
     text-align: justify;
-    padding: 0 150px 10px 150px;
+    padding: 20px 0;
 
 
 }
@@ -433,5 +440,10 @@ a.tilelink {
     font-size: 20px;
     display: none;
 
+}
+
+#mailto {
+
+    text-decoration: none;
 }
 

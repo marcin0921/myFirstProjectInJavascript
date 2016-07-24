@@ -57,7 +57,7 @@ table{
     position: absolute;
     top: 90px;
     left: 77px;
-    border-spacing: 0;
+    border-spacing: 0 !important;
     opacity: 1;
 
 
@@ -65,7 +65,7 @@ table{
 
 td, tr {
 
-    border: 1px solid white;
+    border: 1px solid white !important;
     width: 83px;
     height: 28px;
 
@@ -79,7 +79,7 @@ td, tr {
     padding-right: 10px;
     width: 50px !important;
     color: darkgreen;
-    border: none;
+    border: none !important;
 
 }
 
@@ -90,7 +90,7 @@ td, tr {
     font-size: 50px;
     text-align: center;
     color: darkgreen;
-    border: none;
+    border: none !important;
 }
 
 .firstRow {
