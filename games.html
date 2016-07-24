@@ -12,7 +12,7 @@
 
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="style_ships.css" rel="stylesheet" type="text/css" />
-
+    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="webfont/css/fontello.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
@@ -23,50 +23,81 @@
 
 <body onload="odliczanie();">
 
-<div class="container">
-
-
-
 <!--------------------------------------- Pierwszy prostokąt --------------------------------->
-    <div class="rectangle1">
-        <a href="index.html"><div class="logo"><img src="javascript_logo2.png" /></div></a>
-        <div id="zegar"></div>
-        <div style="clear:both;"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-5">
+            <a href="index.html"><div class="logo"><img src="javascript_logo2.png" /></div></a>
+        </div>
+        <div class="col-lg-5">
+            <div id="zegar"></div>
+        </div>
     </div>
+
+</div>
 <!--------------------------------------- KONIEC PIERWSZY PROSTOKĄT --------------------------------->
-
-    <div class="nav">
-        <ol>
-            <li><a href="index.html">START</a></li>
-            <li><a href="#">PROJEKTY</a></li>
-            <li><a href="gameChoice.html">GRY</a></li>
-            <li><a href="#">KONTAKT</a></li>
-        </ol>
-
-
-    <div style="clear:both"></div>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <span id="navMenu">Nawigacja</span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Rozwiń nawigację</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="list-inline">
+                    <li><a href="index.html">START</a></li>
+                    <li class="borderLI-sx"><a href="projects.html">PROJEKTY</a></li>
+                    <li class="borderLI"><a href="gameChoice.html">GRY</a></li>
+                    <li class="borderLI-sx"><a href="contact.html">KONTAKT</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
-
+</div>
 
 <!--------------------------------------- Drugi prostokąt --------------------------------->
-     <div class="rectangle2">
-         <a href="obslugaZdarzen.html" class="tilelink">
-            <div class="tile1">
-                <i class="icon-file-code"></i>
-            </div>
-         </a>
-         <a href="#" class="tilelink">
-            <div class="tile11">
-                <i class="icon-mail"></i>
-            </div>
-         </a>
-        <a href="gameChoice.html" class="tilelink">
-            <div class="tile2">
-                <i class="icon-gamepad"></i>
-            </div>
-        </a>
-        <div style="clear:both;"></div>
-     </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-3" >
+            <a href="projects.html" class="tilelink">
+                <div class="tile1Index">
+                    <i class="icon-file-code"></i>
+                </div>
+
+            </a>
+        </div>
+
+        <div class="col-sm-3" >
+
+            <a href="contact.html" class="tilelink">
+                <div class="tile11Index">
+                    <i class="icon-mail"></i>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="col-sm-4" >
+
+            <a href="gameChoice.html" class="tilelink">
+                <div class="tile2Index">
+                    <i class="icon-gamepad"></i>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-sm-1" ></div>
+
+
+    </div>
+
+</div>
+
 <!--------------------------------------- KONIEC DRUGI PROSTOKĄT --------------------------------->
 
     <!--------------------------------------- Trzeci prostokąt --------------------------------->
@@ -185,32 +216,18 @@
 <!-- WYŁĄCZONY <script src="scores.js"></script> -->
 <!-- WYŁĄCZONY <script src="car.js"></script> -->
 <!-- WYŁĄCZONY <script src="typeof.js"></script> -->
-
-
 <script src="jquery-1.12.3.min.js"></script>
-<!--------------------------------------Skrypt sticky na podstawie jquery------------------------->
+<script src="indexAnimations.js"></script>
+<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+<!-- Sticky Nav -->
+<script src="jquery.sticky.js"></script>
 <script>
-
-    $(document).ready(function() {
-        var stickyNavTop = $('.nav').offset().top;
-
-        var stickyNav = function(){
-            var scrollTop = $(window).scrollTop();
-
-            if (scrollTop > stickyNavTop) {
-                $('.nav').addClass('sticky');
-            } else {
-                $('.nav').removeClass('sticky');
-            }
-        };
-
-        stickyNav();
-
-        $(window).scroll(function() {
-            stickyNav();
-        });
+    $(document).ready(function(){
+        $(".navbar").sticky({topSpacing:0});
     });
 </script>
+
 
 
 </body>
